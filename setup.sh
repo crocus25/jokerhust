@@ -3,6 +3,7 @@
 
 
 #!/usr/bin/env bash
+
 set -euo pipefail
 
 # ==============================
@@ -42,7 +43,7 @@ echo "Usuario y grupo creados correctamente."
 echo "Creando estructura de directorios para $DOCKERVPS..."
 sudo mkdir -p "$DARKBRICKHUST_LOGS" "$DARKBRICKHUST_CONFIG" "$DARKBRICKHUST_DATA"
 sudo chown -R $DARKBRICKHUST_USER:$DARKBRICKHUST_GROUP "$DARKBRICKHUST_PATH"
-sudo chmod -R 750 "$DARKBRICKHUST_PATH"
+sudo chmod -R 755 "$DARKBRICKHUST_PATH"
 
 echo "Directorios creados y permisos configurados."
 
