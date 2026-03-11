@@ -1,15 +1,19 @@
+# ToDo
+# Input 
+
+
 #!/usr/bin/env bash
 set -euo pipefail
 
 # ==============================
 # VARIABLES CONFIGURABLES
 # ==============================
-PLACEHOLDER="joker"                   # Nombre simbólico del host
+PLACEHOLDER=$(hostname)               # Nombre simbólico del host
 HOST_BASE_PATH="/home/docker"         # Carpeta base de todos los VPS
 
-DOCKERVPS="darkbrickhust"             # Identificador del VPS
-DARKBRICKHUST_USER="darkbrickhust"    # Usuario dedicado
-DARKBRICKHUST_GROUP="docker"          # Grupo para docker
+DOCKERVPS="${PLACEHOLDER}hust"         # Identificador del VPS
+DARKBRICKHUST_USER=$DOCKERPVS          # Usuario dedicado
+DARKBRICKHUST_GROUP="docker"           # Grupo para docker
 DARKBRICKHUST_UID="1500"
 DARKBRICKHUST_GID="1500"
 
